@@ -1,3 +1,4 @@
+voila/render/dashboard_im_machine.ipynb
 
 # Voila example: Gaussian density
 
