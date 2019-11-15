@@ -5,8 +5,8 @@ Created on Wed Dec  3 19:35:55 2014
 @author: jmmauricio
 """
 
-import xlrd
-from xlwt import Utils
+#import xlrd
+#from xlwt import Utils
 import numpy as np
 
 def range2np(sheet, excel_range):
