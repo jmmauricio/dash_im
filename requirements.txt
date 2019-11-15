@@ -11,3 +11,4 @@ IPython
 ipykernel
 requests
 pandas
+ipympl
