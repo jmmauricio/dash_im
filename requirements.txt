@@ -1,6 +1,7 @@
-bqplot
+numpy
 scipy
+matplotlib
+numba
+bqplot
 voila
 pydgrid
-numpy
-numba
