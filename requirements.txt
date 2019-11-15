@@ -5,3 +5,12 @@ numba
 bqplot
 voila
 pydgrid
+bokeh
+nbsphinx
+IPython
+ipykernel
+requests
+pandas
+sphinx
+sphinx_rtd_theme
+qgrid
