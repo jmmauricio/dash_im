@@ -30,6 +30,11 @@ class im:
     def __init__(self,motor_type='abb_3kW'):
         
         self.motor_type = motor_type
+        self.set_motor(self.motor_type)
+
+    def set_motor(self,motor_type):
+        self.motor_type = motor_type
+        
         self.library = {
             'abb_3kW':  {'P_n': 3e3,'U_n': 400.0, 'R_1': 1.86, 'X_1': 2.2, 'R_f': 1223.0, 'X_mu': 68.0, 
                          'R_2_nom': 1.59, 'X_2_nom': 1.54, 'R_2_start': 1.24, 'X_2_start': 2.2, 
@@ -57,7 +62,7 @@ class im:
         self.freq = self.freq_nom
         self.omega_1 = 2*np.pi*self.freq_nom
         self.Omega_1 = self.omega_1/self.N_pp
-        self.n_1=60.0/(2.0*np.pi)/self.Omega_1       
+        self.n_1=60.0*self.freq_nom/self.N_pp       
         self.N_pp = self.library[self.motor_type]['N_pp']  
         self.P_n = self.library[self.motor_type]['P_n']
         self.R_1 = self.library[self.motor_type]['R_1']
